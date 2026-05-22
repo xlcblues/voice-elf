@@ -1,0 +1,33 @@
+{
+    "app_name": "波形模拟器",
+    "version": "1.0.0",
+
+    "audio": {
+        "default_sample_rate": 44100,
+        "default_duration": 5.0,
+        "max_duration": 60.0,
+        "default_volume": 0.8
+    },
+
+    "gui": {
+        "window_title": "波形模拟器",
+        "window_size": [1200, 800],
+        "theme": "default",
+        "update_interval": 50  # ms
+    },
+
+    "display": {
+        "max_display_points": 10000,
+        "auto_scale": true,
+        "show_grid": true
+    },
+
+    "presets": {
+        "sine_wave": "sin(2*PI*440*t)",
+        "square_wave": "signal.square(2*PI*440*t)",
+        "sawtooth_wave": "signal.sawtooth(2*PI*440*t)",
+        "chord": "0.5*sin(2*PI*440*t) + 0.3*sin(2*PI*554*t) + 0.2*sin(2*PI*659*t)",
+        "am_modulation": "(1 + 0.5*sin(2*PI*10*t)) * sin(2*PI*440*t)",
+        "fm_modulation": "sin(2*PI*(440 + 50*sin(2*PI*5*t))*t)"
+    }
+}

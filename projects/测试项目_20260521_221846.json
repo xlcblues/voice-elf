@@ -1,0 +1,29 @@
+{
+  "name": "测试项目",
+  "created": "2026-05-21T22:18:45.053171",
+  "modified": "2026-05-21T22:18:46.426246",
+  "version": "1.0",
+  "settings": {},
+  "waveforms": [
+    {
+      "id": 1779373126,
+      "expression": "sin(2*PI*440*t)",
+      "parameters": {
+        "duration": 2.0,
+        "sample_rate": 44100,
+        "amplitude": 1.0
+      },
+      "created": "2026-05-21T22:18:46.417332",
+      "has_data": true,
+      "data_file": "waveform_1779373126.npy"
+    }
+  ],
+  "presets": [],
+  "history": [
+    {
+      "time": "2026-05-21T22:18:46.426238",
+      "action": "add_waveform",
+      "description": "添加波形: sin(2*PI*440*t)"
+    }
+  ]
+}
