@@ -53,6 +53,51 @@ pip install -r requirements.txt
 python main.py
 ```
 
+## 打包分发
+
+如果你想将波形模拟器打包成独立的可执行文件，可以分发给没有Python环境的用户：
+
+### 快速打包（推荐）
+
+1. **进入build目录**
+   ```bash
+   cd build
+   ```
+
+2. **安装打包依赖**
+   ```bash
+   pip install -r build_requirements.txt
+   ```
+
+3. **运行打包脚本**
+   ```bash
+   # Windows用户推荐
+   python build_windows.py
+
+   # 或使用通用方法
+   python build.py
+   ```
+
+4. **验证打包结果**
+   ```bash
+   python test_package.py
+   ```
+
+### 打包结果
+
+打包成功后，可执行文件位于：
+- Windows: `dist/WaveformSimulator/WaveformSimulator.exe`
+- 大小约 13-15 MB
+
+整个 `dist/WaveformSimulator/` 目录可以独立运行，无需Python环境。
+
+### 详细文档
+
+更多打包信息和故障排除，请查看：
+- `build/README.md` - 打包工具说明
+- `build/BUILD_GUIDE.md` - 详细打包指南
+- `build/PACKAGE_SUCCESS.md` - 打包成功案例
+
 ### 基础使用
 
 1. **输入波形表达式**
